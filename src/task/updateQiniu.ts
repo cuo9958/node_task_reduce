@@ -3,7 +3,7 @@ import { CronJob } from "cron";
 let job: any = null;
 
 export default function start() {
-    job = new CronJob("* * * * * *", run).start();
+    job = new CronJob("*/9 * * * * *", run).start();
     return job;
 }
 

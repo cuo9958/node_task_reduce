@@ -21,4 +21,15 @@ module.exports = {
         reset: "",
         url: "mongodb://127.0.0.1:27017",
     },
+    //七牛的配置
+    qiniu: {
+        //key
+        accessKey: "",
+        //key
+        secretKey: "",
+        //空间名称
+        scope: "",
+        //域名前缀
+        path: "",
+    },
 };
