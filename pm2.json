@@ -1,12 +1,12 @@
 {
     "apps": [
         {
-            "name": "node-ts-template@18000",
+            "name": "node_task_reduce@18802",
             "script": "dist/index.js",
             "args": [],
             "env": {
-                "PORT": "18000",
-                "NODE_ENV": "development"
+                "PORT": "18802",
+                "NODE_ENV": "production"
             }
         }
     ]

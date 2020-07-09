@@ -1,6 +1,7 @@
 import { CronJob } from "cron";
 
 let job: any = null;
+
 export default function start() {
     job = new CronJob("* * * * * *", run).start();
     return job;

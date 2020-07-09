@@ -106,3 +106,5 @@ dist
 dist/
 
 package-lock.json
+
+config/production.json

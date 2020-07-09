@@ -4,9 +4,9 @@
     "description": "node+typescript的模版脚手架",
     "main": "index.js",
     "scripts": {
-        "start": "node dist/index.js",
+        "start": "export NODE_ENV=production&&node dist/index.js",
         "build": "tsc",
-        "dev": "nodemon"
+        "dev": "export NODE_ENV=production&&nodemon"
     },
     "repository": {
         "type": "git",
