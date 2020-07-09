@@ -1,4 +1,5 @@
 import { CronJob } from "cron";
+import { updateToken } from "../service/qiniu";
 
 let job: any = null;
 
@@ -9,4 +10,5 @@ export default function start() {
 
 async function run() {
     console.log("run qiniu");
+    updateToken();
 }
