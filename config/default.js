@@ -32,4 +32,6 @@ module.exports = {
         //域名前缀
         path: "",
     },
+    //接口的鉴权token
+    token: "test",
 };

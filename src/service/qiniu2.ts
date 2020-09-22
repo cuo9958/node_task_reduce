@@ -17,3 +17,7 @@ export async function updateToken2() {
     console.log("设置七牛的token", token);
     return token;
 }
+
+export function getToken2() {
+    return Redis.get(qiniu_key);
+}
