@@ -6,7 +6,7 @@ import { getToken2 } from "../service/qiniu2";
 
 const router = new Router();
 
-router.get("/qiniu", async function (ctx) {
+router.get("/qiniu", CheckAuth, async function (ctx) {
     try {
         const data = await getToken();
         ctx.body = Success(data || "");
