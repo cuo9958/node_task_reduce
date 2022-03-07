@@ -1,9 +1,10 @@
-import Router from "../extend/TRouter";
+import Router from "@koa/router";
+import { BeSuccess } from "../utils/response";
 
 const router = new Router();
 
 router.tget("/", function (ctx, next) {
-    ctx.body = ctx.Success("成功");
+  ctx.body = BeSuccess("成功");
 });
 
 export default router.routes();
