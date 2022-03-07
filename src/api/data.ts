@@ -11,7 +11,7 @@ router.get("/qiniu", CheckAuth, async function (ctx) {
         const data = await getToken();
         ctx.body = Success(data || "");
     } catch (error) {
-        Error(error.message);
+        ctx.body = Error(error.message);
     }
     console.log("end");
 });
@@ -20,7 +20,7 @@ router.get("/qiniu2", CheckAuth, async function (ctx) {
         const data = await getToken2();
         ctx.body = Success(data || "");
     } catch (error) {
-        Error(error.message);
+        ctx.body = Error(error.message);
     }
 });
 
