@@ -13,8 +13,10 @@ module.exports = {
         connectionLimit: 2,
     },
     //开发环境，普通redis配置
-    redis: "redis://127.0.0.1:6379",
-
+    redis: {
+         host: '120.78.57.59',
+        password: '123456abc',
+    },
     //mongodb配置
     mg: {
         name: "fe_topic",
