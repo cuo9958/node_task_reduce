@@ -14,7 +14,7 @@ module.exports = {
     },
     //开发环境，普通redis配置
     redis: {
-         host: '120.78.57.59',
+         host: '127.0.0.1',
         password: '123456abc',
     },
     //mongodb配置
